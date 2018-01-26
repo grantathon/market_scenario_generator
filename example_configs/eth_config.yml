@@ -1,0 +1,19 @@
+# Data
+datasource: csv
+data_dir: ./data  # Only necessary if datasource is CSV
+tickers: [
+  eth,
+]
+
+# Model
+model_name: arima
+model_window: 365
+
+# Optimization
+optimization_method: grid search
+scoring_method: l2
+test_time_steps: 30
+
+# Cube
+num_scenarios: 10000
+future_time_steps: 30
